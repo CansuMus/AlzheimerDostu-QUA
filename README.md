@@ -6,11 +6,11 @@ F-55
 **Ürün İle İlgili Bilgiler***
 
 **Takım Elemanları**
-•	Nezihat Kılıç: Scrum Master / Developer 
-•	Abdoul-Rachid Sawadogo: Product owner / Developer
-•	Çağatay Şenşatar: Developer
-•	Cansu Muş: Developer
-•	Nefise Hazır: Developer
+-	Nezihat Kılıç: Scrum Master / Developer 
+-	Abdoul-Rachid Sawadogo: Product owner / Developer
+-	Çağatay Şenşatar: Developer
+-	Cansu Muş: Developer
+-	Nefise Hazır: Developer
 
 **Ürün İsmi**
 Alzheimer Dostu
@@ -41,9 +41,9 @@ Genel olarak, Alzheimer Dostu uygulaması Alzheimer hastalarının ve yakınlar�
 - Hasta bilgileri: Hastanın doktoru, ilaçları gibi bilgilere buradan erişebilirler.
 -	Alzheimer nedir?: Bu özelliğin içinde barındırdığı makale ve bilgilendirici içeriklerle hasta yakını kolayca ulaşıp bilgilenebilir.
 
-**00Hedef Kitle**
-•	Alzheimer hastaları
-•	Alzheimer hasta yakınları
+**Hedef Kitle**
+-	Alzheimer hastaları
+-	Alzheimer hasta yakınları
 
 
 
