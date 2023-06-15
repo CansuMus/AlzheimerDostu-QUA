@@ -3,7 +3,7 @@
 **Takım İsmi**
 F-55
 
-**Ürün İle İlgili Bilgiler***
+**Ürün İle İlgili Bilgiler**
 
 **Takım Elemanları**
 -	Nezihat Kılıç: Scrum Master / Developer 
