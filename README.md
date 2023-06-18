@@ -58,22 +58,30 @@ Genel olarak, Alzheimer Dostu uygulaması Alzheimer hastalarının ve yakınlar�
 
 
 **Ürün Durumu: Ekran görüntüleri:** 
+
+
 Screenshot 1
+
 ![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/277e8b59-add8-4f55-8b4d-00602b1fc6e7)
 
 Screenshot 2 
+
 ![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/1b748c68-b90f-455e-bb82-cdebdb3ba89a)
 
 Screenshot 3
+
 ![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/85c42f59-925e-4501-b342-8f7ba16699e0)
 
 Screenshot 4
+
 ![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/b942ff80-e4fd-40bc-9dc2-16920bc39c3a)
 
 Screenshot 5
+
 ![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/42fff645-3235-4063-98ac-69234a0c069c)
 
 Screenshot 6
+
 ![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/5bb34f80-ab50-49ff-858f-e8f0c07ac062)
 
 
@@ -82,9 +90,13 @@ Screenshot 6
 **Sprint Review katılımcıları:** Tüm takım
 
 **Sprint Retrospective:**
+
 -Önümüzdeki sprintlerde takım içi iletişim güçlendirilecek.
+
 -Takım üyeleriyle projeye vakit ayırma yönetimi konuşuldu.
+
 -Github daha aktif kullanılacak.
+
 -Her takım üyesinin kod yazmaya ağırlık vermesi gerektiğine karar verildi.
 
 # Product Backlog URL
