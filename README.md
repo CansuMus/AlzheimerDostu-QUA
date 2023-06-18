@@ -46,5 +46,30 @@ Genel olarak, Alzheimer Dostu uygulaması Alzheimer hastalarının ve yakınlar�
 -	Alzheimer hasta yakınları
 
 
+# Sprint 1
+**Sprint içinde tamamlanması tahmin edilen puan:** 100 Puan
+
+**Puan tamamlama mantığı:** Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in 100 puan olması gerektiğine karar verildi.
+
+**Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: https://1drv.ms/w/s!AlasK6j8McVDgVVpN3mQMFSAY1Ra?e=Ho00me 
+
+**Sprint board update: Sprint board screenshotları:**
+
+
+**Ürün Durumu: Ekran görüntüleri:** 
+Screenshot 1
+Screenshot 2 
+Screenshot 3
+
+**Sprint Review: Alınan kararlar:** Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış,firebase'e bağlanması sağlanmış, genel UI tasarımına karar verilmiş, kodlanan sayfaların ayrıntılı UI tasarımları yapılmış ve eksiklikler değerlendirilmiştir. 
+**Sprint Review katılımcıları:**
+
+**Sprint Retrospective:**
+
+Roller ile ilgili düzenleme yapılmış, scrum master değişmiştir.
+Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
+Takım üyelerinin gelecek sprintlerde aktif olması gerektiğine vurgu yapılmıştır.
+
+
 
 
