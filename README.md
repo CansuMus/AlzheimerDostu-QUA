@@ -16,7 +16,7 @@ F-55
 Alzheimer Dostu
 
 **Product Backlog URL**
-[??](https://trello.com/invite/b/uwIA5E1c/ATTIb1d6cf215fcdbed35852bdec7e928d6206E78680/alzheimer-dostu-spri%CC%87nt-1)
+[trello 1](https://trello.com/invite/b/uwIA5E1c/ATTIb1d6cf215fcdbed35852bdec7e928d6206E78680/alzheimer-dostu-spri%CC%87nt-1)
 
 **Ürün Açıklaması**
 Alzheimer Dostu uygulaması, Alzheimer hastalarının ve onların yakınlarının yaşamlarını kolaylaştırmak için önemli bir araç olabilir. Hastalar için, basit ve kullanıcı dostu bir arayüz sunarak uygulamanın kullanımını kolaylaştırır. Evlerine kolayca geri dönebilmelerini sağlayan "Eve Git" özelliği, hastaların güvenliğini ve konforunu artırır. Ayrıca not alma özelliği sayesinde unutmak istemedikleri bilgileri kaydedebilir ve telefon numaralarına hızlıca erişerek acil durumlarda yardım talep edebilirler. Zihin aktiviteleri ise hastaların zihinsel gelişimlerini desteklemek için egzersizler ve oyunlar sunar.
