@@ -82,7 +82,7 @@ Screenshot 5
 
 Screenshot 6
 
-![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/5bb34f80-ab50-49ff-858f-e8f0c07ac062)
+![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/f2914985-2351-4648-a0b9-28642dc5fc5c)
 
 
 **Sprint Review: Alınan kararlar:** Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış, genel UI tasarımına karar verilmiş, kodlanan sayfaların ayrıntılı UI tasarımları yapılmış ve eksiklikler değerlendirilmiştir. 
