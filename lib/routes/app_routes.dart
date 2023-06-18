@@ -1,5 +1,6 @@
 import 'package:ff_55/features/Login/login_page.dart';
 import 'package:ff_55/features/Login/registration_page.dart';
+import 'package:ff_55/features/patient/pages/patient_main_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -38,6 +39,11 @@ class AppRoutes {
        GoRoute(
         path: AccountRegistrationPage.route, //SplashPage.route,
         builder: (context, state) => const AccountRegistrationPage(),
+      ),
+
+      GoRoute(
+        path: PatientMainPage.route, 
+        builder: (context, state) => const PatientMainPage(),
       ),
         
     ]

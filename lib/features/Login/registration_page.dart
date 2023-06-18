@@ -58,7 +58,7 @@ class _AccountRegistrationPageState extends State<AccountRegistrationPage> {
                     // email field
                     LoginTextField(
                         icon: Icons.email,
-                        hintText: "Email",
+                        hintText: "E-Posta Girin",
                         isPasswordField: false,
                         controller: emailController,
                         onChanged: (text) {
@@ -70,7 +70,7 @@ class _AccountRegistrationPageState extends State<AccountRegistrationPage> {
                     // password field
                     LoginTextField(
                         icon: Icons.lock,
-                        hintText: "Password",
+                        hintText: "Şifre Girin",
                         isPasswordField: true,
                         controller: passwordController,
                         onChanged: (text) {
@@ -82,17 +82,18 @@ class _AccountRegistrationPageState extends State<AccountRegistrationPage> {
                     // password confirmation field
                     LoginTextField(
                         icon: Icons.lock,
-                        hintText: "Confirm Password",
+                        hintText: "Şifre Tekrar Girin",
                         isPasswordField: true,
                         controller: confirmPasswordController,
                         onChanged: (text) {
                           setState(() {});
                         }),
                   ])),
+
               LoginButton(
-                  label: 'Register',
+                  label: 'Kayıt',
                   enabled: false, //validateFormFields(),
-                  onTap: () async {
+                  onTap: (){
                     // String username = emailController.value.text;
                     // String pwd = passwordController.value.text;
 

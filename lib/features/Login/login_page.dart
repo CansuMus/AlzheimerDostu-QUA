@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../styles/colors/colors.dart';
+import '../patient/pages/patient_main_page.dart';
 import 'login_button.dart';
 
 class LoginPage extends StatefulWidget {
@@ -75,7 +76,7 @@ class _LoginPageState extends State<LoginPage> {
                     const SizedBox(height: 10),
 
                     LoginTextField(icon: Icons.email,
-                     hintText: "Email",
+                     hintText: "E-Posta Girin ",
                     isPasswordField: false, 
                     controller: emailController, 
                     onChanged: (text) {
@@ -88,7 +89,7 @@ class _LoginPageState extends State<LoginPage> {
 
                   
                     LoginTextField(icon: Icons.lock,
-                     hintText: "Password",
+                     hintText: "Şifre Girin",
                     isPasswordField: true, 
                     controller: passwordController, 
                     onChanged: (text) {
@@ -100,15 +101,17 @@ class _LoginPageState extends State<LoginPage> {
             ),
 
             LoginButton(
-              label: 'Sign In',
+              label: 'Giriş',
               enabled: true,
-              onTap: () {}
+              onTap: () {
+                context.go(PatientMainPage.route);
+              }
             ),
 
             const SizedBox(height: 10),
 
             LoginButton(
-              label: 'Register',
+              label: 'Kayıt',
               icon: Icons.account_circle,
               backgroundColor: Utils.mainThemeColor.withOpacity(0.05),
               iconColor: Utils.mainThemeColor,
