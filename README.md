@@ -47,6 +47,9 @@ Genel olarak, Alzheimer Dostu uygulaması Alzheimer hastalarının ve yakınlar�
 
 
 # Sprint 1
+
+**Sprint Notları:** Sprint hakkındaki detaylı bilgi ana görevlerin (mavi) içinde ayrıntılı yazmaktadır.
+
 **Sprint içinde tamamlanması tahmin edilen puan:** 100 Puan
 
 **Puan tamamlama mantığı:** Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in 100 puan olması gerektiğine karar verildi.
