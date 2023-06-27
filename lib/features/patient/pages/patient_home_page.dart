@@ -1,6 +1,6 @@
 
-import 'dart:ffi';
-
+import 'package:ff_55/features/patient/components/info/Info_home_page.dart';
+import 'package:ff_55/features/patient/components/notes/notes_home_screen.dart';
 import 'package:ff_55/styles/colors/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -9,12 +9,11 @@ class PatientHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return  Scaffold(
 
       body: Column(
         children: [
-
-
           ClipPath(
             clipper: CustomClipPath(),
             child: Container(
@@ -32,41 +31,54 @@ class PatientHomePage extends StatelessWidget {
             ),
           ),
 
-
           Expanded(
             child: GridView.count(
-            primary: false,
-            padding: const EdgeInsets.all(20),
-            crossAxisSpacing: 30,
-            mainAxisSpacing: 30,
-            crossAxisCount: 2,
-            children: <Widget>[
-              
-              CardHome(text: "Bilgilerim", icon: Icons.info_sharp, onTap: (){},),
-              CardHome(text: "Evim", icon: Icons.home_outlined, onTap: (){},),
-              CardHome(text: "Ailem", icon: Icons.family_restroom, onTap: (){},),
-              CardHome(text: "Notlarım", icon: Icons.note_add, onTap: (){},),
-
-              
-               
-            ],
-          ),
+              primary: false,
+              padding: const EdgeInsets.all(20),
+              crossAxisSpacing: 30,
+              mainAxisSpacing: 30,
+              crossAxisCount: 2,
+              children: <Widget>[
+                CardHome(
+                  text: "Bilgilerim",
+                  icon: Icons.info_sharp,
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return InfoHomePage();
+                    }));
+                  },
+                ),
+                CardHome(
+                  text: "Evim",
+                  icon: Icons.home_outlined,
+                  onTap: () {},
+                ),
+                CardHome(
+                  text: "Ailem",
+                  icon: Icons.family_restroom,
+                  onTap: () {},
+                ),
+                CardHome(
+                  text: "Notlarım",
+                  icon: Icons.note_add,
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return Notes_Home_Screen();
+                    }));
+                  },
+                ),
+              ],
+            ),
           )
-          
-
-
-          
         ],
       ),
     );
   }
 }
 
-
-
-
-class CustomClipPath extends CustomClipper<Path>{
-
+class CustomClipPath extends CustomClipper<Path> {
   @override
   Path getClip(size) {
     double width = size.width;
@@ -87,15 +99,13 @@ class CustomClipPath extends CustomClipper<Path>{
     return path;
 }
 
-@override
+  @override
+
   bool shouldReclip(covariant CustomClipper oldClipper) {
     return false;
   }
-}
 
-
-
-
+ }
 
 class CardHome extends StatelessWidget {
    const CardHome({ required this.text, required this.icon, required this.onTap,
@@ -129,10 +139,12 @@ class CardHome extends StatelessWidget {
     
             Text(text, 
             style: TextStyle(fontSize: 20, color: Colors.white,),)
-    
-          ],
-        ),
+        ]),
+ 
       ),
     );
   }
+
 }
+
+
