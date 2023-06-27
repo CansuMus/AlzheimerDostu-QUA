@@ -1,4 +1,5 @@
 import 'package:ff_55/features/patient/components/info/models/text_form.dart';
+import 'package:ff_55/features/patient/pages/patient_home_page.dart';
 import 'package:ff_55/styles/colors/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -14,62 +15,68 @@ class _InfoFormPageState extends State<InfoFormPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-       elevation: 0,
-       backgroundColor: Utils.mainThemeColor,
-      ),
-        body: Container(
-            width: double.infinity,
-            height: double.infinity,
-            decoration: const BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage("assets/images/backgroundİmg.png"),
-                    fit: BoxFit.fill)),
-            child: Column(children: [
-              const Padding(
-                padding: EdgeInsets.only(top: 10),
-                child: Text(
-                  "Hasta Kayıt Bilgi Formu",
-                  style: TextStyle(
-                      fontSize: 35,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white),
+        body: Column(children: [
+      ClipPath(
+        clipper: CustomClipPath(),
+        child: Container(
+          height: 200,
+          color: Utils.mainThemeColor,
+          child: Center(
+            child: ListTile(
+              leading: IconButton(
+                icon: Icon(
+                  Icons.arrow_back,
+                  color: Colors.white,
+                  size: 26,
                 ),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
               ),
-              Expanded(
-                  child: Padding(
-                padding: const EdgeInsets.only(left: 10, top: 60),
-                child: SingleChildScrollView(
-                  child: Form(
-                    child: Column(
-                      children: [
-                        const TextForm(text: "Adı ve SoyAdı: "),
-                        const TextForm(text: "TC NO: "),
-                        selectGender(),
-                        const TextForm(text: "Doğum Günü : "),
-                        const TextForm(text: "Alerjisi var mı?"),
-                        const TextForm(text: "Kullandığı İlaçlar"),
-                        const TextForm(text: "Lütfen geçmiş herhangi bir\n  Hastaneyeyatış veya\n Hasta Dışı Tedaviyi listeleyin"),
-                        const TextForm(text: "Belitmek istediğiniz başka bir şey "),
-                        
-                        ElevatedButton(
-                          style: ButtonStyle(
-                            backgroundColor:MaterialStateProperty.all(Utils.mainThemeColor),
-                          ),
-                          onPressed: (){},
-                          child: const Text(
-                            "Kaydet",
-                            style: TextStyle(
-                              fontSize: 30
-                            ),
-                            )
-                        )
-                      ],
+              title: Text(
+                "Hasta Kayıt Bilgi Formu",
+                style: TextStyle(
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+            ),
+          ),
+        ),
+      ),
+      Expanded(
+          child: Padding(
+        padding: const EdgeInsets.only(left: 10, top: 0),
+        child: SingleChildScrollView(
+          child: Form(
+            child: Column(
+              children: [
+                const TextForm(text: "Adı ve SoyAdı: "),
+                const TextForm(text: "TC NO: "),
+                selectGender(),
+                const TextForm(text: "Doğum Günü : "),
+                const TextForm(text: "Alerjisi var mı?"),
+                const TextForm(text: "Kullandığı İlaçlar"),
+                const TextForm(
+                    text:
+                        "Lütfen geçmiş herhangi bir\n  Hastaneyeyatış veya\n Hasta Dışı Tedaviyi listeleyin"),
+                const TextForm(text: "Belitmek istediğiniz başka bir şey "),
+                ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor:
+                          MaterialStateProperty.all(Utils.mainThemeColor),
                     ),
-                  ),
-                ),
-              ))
-            ])));
+                    onPressed: () {},
+                    child: const Text(
+                      "Kaydet",
+                      style: TextStyle(fontSize: 30),
+                    ))
+              ],
+            ),
+          ),
+        ),
+      ))
+    ]));
   }
 
   Row selectGender() {
