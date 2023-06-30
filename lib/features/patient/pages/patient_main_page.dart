@@ -1,5 +1,3 @@
-
-
 import 'package:ff_55/features/patient/pages/patient_home_page.dart';
 import 'package:ff_55/styles/colors/colors.dart';
 import 'package:flutter/material.dart';
@@ -70,7 +68,3 @@ int currentPageIndex = 0;
     );
   }
 }
-
-
-
-

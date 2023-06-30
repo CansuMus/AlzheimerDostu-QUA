@@ -1,4 +1,3 @@
-
 import 'package:ff_55/features/patient/components/info/Info_home_page.dart';
 import 'package:ff_55/features/patient/components/notes/notes_home_screen.dart';
 import 'package:ff_55/styles/colors/colors.dart';
@@ -146,5 +145,3 @@ class CardHome extends StatelessWidget {
   }
 
 }
-
-

@@ -1,11 +1,10 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../styles/colors/colors.dart';
 
 class LoginButton extends StatelessWidget {
-  
+
   final Function? onTap;
   final String? label;
   final bool? enabled;
@@ -13,16 +12,16 @@ class LoginButton extends StatelessWidget {
   final Color? backgroundColor;
   final Color? iconColor;
   final Color? labelColor;
-  
+
   const LoginButton({
-    Key? key, this.label, this.onTap, 
-    this.icon, 
-    this.backgroundColor = Utils.mainThemeColor, 
+    Key? key, this.label, this.onTap,
+    this.icon,
+    this.backgroundColor = Utils.mainThemeColor,
     this.iconColor = Colors.white,
     this.labelColor = Colors.white,
     this.enabled = true })
   : super(key: key);
-  
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -54,9 +53,9 @@ class LoginButton extends StatelessWidget {
                           child: Icon(icon, color: iconColor, size: 20),
                         )
                       ),
-                      Text(label!, textAlign: TextAlign.center, 
+                      Text(label!, textAlign: TextAlign.center,
                         style: GoogleFonts.roboto(
-                          color: labelColor, 
+                          color: labelColor,
                           fontWeight: FontWeight.bold
                         )
                     )
