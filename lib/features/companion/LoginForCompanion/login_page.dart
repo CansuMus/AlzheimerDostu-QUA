@@ -1,26 +1,27 @@
-import 'package:ff_55/features/Login/login_textfield.dart';
-import 'package:ff_55/features/Login/registration_page.dart';
-import 'package:ff_55/features/Login/social_iconPage.dart';
+import 'package:ff_55/features/companion/LoginForCompanion/login_textfield.dart';
+import 'package:ff_55/features/companion/LoginForCompanion/registration_page.dart';
+import 'package:ff_55/features/companion/LoginForCompanion/social_iconPage.dart';
+import 'package:ff_55/features/companion/pages/companion_main_page.dart';
+
+import 'package:ff_55/styles/colors/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
-import '../../styles/colors/colors.dart';
-import '../patient/pages/patient_main_page.dart';
 import 'login_button.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class LoginPageForCompanion extends StatefulWidget {
+  const LoginPageForCompanion({Key? key}) : super(key: key);
 
-  static String route = "/loginPage";
+  static String route = "/LoginPageForCompanionForCompanion";
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<LoginPageForCompanion> createState() => _LoginPageForCompanionState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _LoginPageForCompanionState extends State<LoginPageForCompanion> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
@@ -41,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
         idToken: googleAuth.idToken,
       );
       await FirebaseAuth.instance.signInWithCredential(credential);
-      context.go(PatientMainPage.route);
+      context.go(CompanionMainPage.route);
     } catch (e) {
       print('Google sign-in error: $e');
     }
@@ -140,7 +141,7 @@ class _LoginPageState extends State<LoginPage> {
                 SocialIcon(
                   icon: Icons.facebook,
                   onPressed: () {
-                    context.go(PatientMainPage.route);
+                    context.go(CompanionMainPage.route);
                     // Facebook ile giriş yapma işlemleri
                   },
                 ),
@@ -180,7 +181,7 @@ class _LoginPageState extends State<LoginPage> {
                     label: 'Giriş',
                     enabled: true,
                     onTap: () {
-                      context.go(PatientMainPage.route);
+                      context.go(CompanionMainPage.route);
                     },
                   ),
                   const SizedBox(height: 10),

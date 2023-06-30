@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:ff_55/features/Login/login_page.dart';
+import 'package:ff_55/features/splash/start_screen.dart';
 import 'package:ff_55/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -18,7 +19,7 @@ class SplashPage extends StatelessWidget {
 
      Future.delayed(const Duration(seconds: 2), () {
     GoRouter.of(Keys.mainNav.currentContext!)
-      .go(LoginPage.route);});
+      .go(StartScreen.route);});
 
 
     return Scaffold(
@@ -42,6 +43,7 @@ class SplashPage extends StatelessWidget {
               ),
             ),
           ),
+          
 
         
         ],
