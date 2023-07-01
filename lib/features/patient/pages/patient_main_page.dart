@@ -1,3 +1,4 @@
+import 'package:ff_55/features/patient/components/game/OyunAnaSayfa.dart';
 import 'package:ff_55/features/patient/pages/patient_home_page.dart';
 import 'package:ff_55/styles/colors/colors.dart';
 import 'package:flutter/material.dart';
@@ -17,11 +18,6 @@ int currentPageIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-    
-
-
-
       bottomNavigationBar: NavigationBar(
         labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
         backgroundColor: Utils.mainThemeColor,
@@ -54,11 +50,8 @@ int currentPageIndex = 0;
         // ),
 
         PatientHomePage(),
-        Container(
-          //color: Colors.green,
-          alignment: Alignment.center,
-          child: const Text('Page 2'),
-        ),
+        OyunAnaEkrani(),
+
         Container(
           //color: Colors.blue,
           alignment: Alignment.center,

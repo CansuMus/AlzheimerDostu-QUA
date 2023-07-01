@@ -1,6 +1,4 @@
 import 'dart:async';
-
-import 'package:ff_55/features/Login/login_page.dart';
 import 'package:ff_55/features/splash/start_screen.dart';
 import 'package:ff_55/routes/app_routes.dart';
 import 'package:flutter/material.dart';
