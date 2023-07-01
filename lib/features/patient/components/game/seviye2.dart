@@ -5,7 +5,7 @@ import 'package:ff_55/widgets/celebration.dart';
 import 'package:flutter/material.dart';
 import 'package:nice_buttons/nice_buttons.dart';
 
-import '../../../data/data2.dart';
+import '../../../../data/data2.dart';
 
 
 
@@ -65,121 +65,123 @@ class _Home2State extends State<Home2> {
             },
           ),
         ),
-        body: Container(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 50),
-            child: Column(
-                children: <Widget>[
-
-                  SizedBox(
-                    height: 1
-                    ,
-                  ),
-                  points != 800 ? Column(
-                    //crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Text(
-                        "$points/800",
-                        style: TextStyle(
-                            fontSize: 40, fontWeight: FontWeight.w500,color: Colors.white,fontFamily: "Roboto"),
-                      ),
-                      Text(
-                        "Puan",
-                        textAlign: TextAlign.start,
-                        style: TextStyle(
-                            fontFamily: "Roboto",
-                            fontSize: 24, fontWeight: FontWeight.w300,color: Colors.white),
-                      ),
-                      GridView(
-                        shrinkWrap: true,
-                        //physics: ClampingScrollPhysics(),
-                        scrollDirection: Axis.vertical,
-                        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                            mainAxisSpacing: 0.0, maxCrossAxisExtent: 90.0),
-                        children: List.generate(gridViewTiles.length, (index) {
-                          return Tile(
-                            imagePathUrl: gridViewTiles[index].getImageAssetPath(),
-                            tileIndex: index,
-                            parent: this,
-                          );
-                        }),
-                      ),TimeCircularCountdown(
-                        unit: CountdownUnit.second,
-
-                        countdownTotal: 120,
-                        diameter: 160,
-                        countdownCurrentColor: Colors.amber,
-
-
-
-                        onFinished: () {
-                          description = ' Süreniz Bitmiştir ve Puanınız:${points}';
-                          setState(() {});
-                        },
-
-                        textStyle: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 60,
-                            fontFamily: "Roboto"
-
+        body: SingleChildScrollView(
+          child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 50),
+              child: Column(
+                  children: <Widget>[
+        
+                    SizedBox(
+                      height: 1
+                      ,
+                    ),
+                    points != 800 ? Column(
+                      //crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        Text(
+                          "$points/800",
+                          style: TextStyle(
+                              fontSize: 40, fontWeight: FontWeight.w500,color: Colors.white,fontFamily: "Roboto"),
                         ),
-                      ),
-
-
-
-
-
-                    ],
-                  ) : Container(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        SizedBox(height: 300,),
-                        Celebration(),
-                        SizedBox(height: 50,),
-
-
-                        NiceButtons(
-                          height: 80,
-                          width: 300,
-                          borderColor: Utils.mainThemeColor,
-                          startColor: Utils.mainThemeColor,
-                          endColor: Utils.secondaryColor,
-                          stretch: false,
-                          gradientOrientation: GradientOrientation.Horizontal,
-                          onTap: (finish) {
-                            setState(() {
-                              points=0;
-                              reStart();
-                            });
+                        Text(
+                          "Puan",
+                          textAlign: TextAlign.start,
+                          style: TextStyle(
+                              fontFamily: "Roboto",
+                              fontSize: 24, fontWeight: FontWeight.w300,color: Colors.white),
+                        ),
+                        GridView(
+                          shrinkWrap: true,
+                          //physics: ClampingScrollPhysics(),
+                          scrollDirection: Axis.vertical,
+                          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                              mainAxisSpacing: 0.0, maxCrossAxisExtent: 90.0),
+                          children: List.generate(gridViewTiles.length, (index) {
+                            return Tile(
+                              imagePathUrl: gridViewTiles[index].getImageAssetPath(),
+                              tileIndex: index,
+                              parent: this,
+                            );
+                          }),
+                        ),TimeCircularCountdown(
+                          unit: CountdownUnit.second,
+        
+                          countdownTotal: 120,
+                          diameter: 160,
+                          countdownCurrentColor: Colors.amber,
+        
+        
+        
+                          onFinished: () {
+                            description = ' Süreniz Bitmiştir ve Puanınız:${points}';
+                            setState(() {});
                           },
-                          child: Text(
-                            'Tekrar Oynamak İçin Bana Tıkla',
-                            style: TextStyle(color: Colors.white, fontSize: 18),
+        
+                          textStyle: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 60,
+                              fontFamily: "Roboto"
+        
                           ),
                         ),
-
+        
+        
+        
+        
+        
                       ],
+                    ) : Container(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          SizedBox(height: 300,),
+                          Celebration(),
+                          SizedBox(height: 50,),
+        
+        
+                          NiceButtons(
+                            height: 80,
+                            width: 300,
+                            borderColor: Utils.mainThemeColor,
+                            startColor: Utils.mainThemeColor,
+                            endColor: Utils.secondaryColor,
+                            stretch: false,
+                            gradientOrientation: GradientOrientation.Horizontal,
+                            onTap: (finish) {
+                              setState(() {
+                                points=0;
+                                reStart();
+                              });
+                            },
+                            child: Text(
+                              'Tekrar Oynamak İçin Bana Tıkla',
+                              style: TextStyle(color: Colors.white, fontSize: 18),
+                            ),
+                          ),
+        
+                        ],
+                      ),
+        
                     ),
-
-                  ),
-                  SizedBox(
-                    height: 4,
-                  ),
-
-
-
-
-
-
-
-
-
-
-
-                ]
-            )
-
+                    SizedBox(
+                      height: 4,
+                    ),
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  ]
+              )
+        
+          ),
         )
     );
 

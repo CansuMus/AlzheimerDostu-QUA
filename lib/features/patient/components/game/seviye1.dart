@@ -1,23 +1,21 @@
+
 import 'package:circular_countdown/circular_countdown.dart';
 import 'package:ff_55/model/Tile_Model.dart';
 import 'package:ff_55/styles/colors/colors.dart';
 import 'package:ff_55/widgets/celebration.dart';
 import 'package:flutter/material.dart';
-
 import 'package:nice_buttons/nice_buttons.dart';
 
-import '../../../data/data3.dart';
+import '../../../../data/data.dart';
 
 
 
-class Home3 extends StatefulWidget {
-  const Home3({Key? key}) : super(key: key);
-
+class Home extends StatefulWidget {
   @override
-  State<Home3> createState() => _Home3State();
+  _HomeState createState() => _HomeState();
 }
 
-class _Home3State extends State<Home3> {
+class _HomeState extends State<Home> {
   List<TileModel> gridViewTiles = <TileModel>[];
   List<TileModel> questionPairs = <TileModel>[];
 
@@ -28,6 +26,7 @@ class _Home3State extends State<Home3> {
     reStart();
   }
   void reStart() {
+
     myPairs = getPairs();
     myPairs.shuffle();
 
@@ -46,19 +45,19 @@ class _Home3State extends State<Home3> {
 
 
 
-
-
   String description = '';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor:Utils.mainThemeColor,
         appBar: AppBar(
-          title: Text("Hafıza Oyunu",style: TextStyle(
-              fontFamily: "Roboto",fontSize: 20
-          ),
-          ),
           backgroundColor: Utils.mainThemeColor,
+          title: Text("Hafıza Oyunu",style: TextStyle(
+            fontFamily: "Roboto",fontSize: 20
+          ),
+          ),
+
           leading: IconButton(
             icon: Icon(Icons.arrow_back,color: Colors.white,),
             onPressed: (){
@@ -66,12 +65,12 @@ class _Home3State extends State<Home3> {
             },
           ),
         ),
-        body: Container(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 50),
-            child: SingleChildScrollView(
+        body: SingleChildScrollView(
+          child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 50),
               child: Column(
                   children: <Widget>[
-
+        
                     SizedBox(
                       height: 1
                       ,
@@ -90,12 +89,13 @@ class _Home3State extends State<Home3> {
                           style: TextStyle(
                               fontFamily: "Roboto",
                               fontSize: 24, fontWeight: FontWeight.w300,color: Colors.white),
-                        ),GridView(
+                        ),
+                        GridView(
                           shrinkWrap: true,
                           //physics: ClampingScrollPhysics(),
                           scrollDirection: Axis.vertical,
                           gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                              mainAxisSpacing: 0.0, maxCrossAxisExtent: 120.0),
+                              mainAxisSpacing: 0.0, maxCrossAxisExtent: 75.0),
                           children: List.generate(gridViewTiles.length, (index) {
                             return Tile(
                               imagePathUrl: gridViewTiles[index].getImageAssetPath(),
@@ -104,28 +104,26 @@ class _Home3State extends State<Home3> {
                             );
                           }),
                         ),
-                        SizedBox(
-                          height: 25,
-                        ),
+                        SizedBox(height: 30,),
                         TimeCircularCountdown(
                           unit: CountdownUnit.second,
-
+        
                           countdownTotal: 120,
                           diameter: 160,
                           countdownCurrentColor: Colors.amber,
-
-
-
+        
+        
+        
                           onFinished: () {
                             description = ' Süreniz Bitmiştir ve Puanınız:${points}';
                             setState(() {});
                           },
-
+        
                           textStyle: const TextStyle(
                               color: Colors.white,
                               fontSize: 60,
                               fontFamily: "Roboto"
-
+        
                           ),
                         ),
                         SizedBox(
@@ -138,93 +136,83 @@ class _Home3State extends State<Home3> {
                             color: Colors.white,
                             fontSize: 30,
                             fontFamily: "Roboto",
-
+        
                           ),
                         ),
-
-
-
-
-
+        
+        
+        
+        
                       ],
-                    ) : Container(child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        SizedBox(height: 150,),
-                        Celebration(),
-                        SizedBox(height: 100,),
-                        NiceButtons(
-                          height: 80,
-                          width: 300,
-                          borderColor: Utils.mainThemeColor,
-                          startColor: Colors.white,
-                          endColor: Colors.white,
-                          stretch: false,
-                          gradientOrientation: GradientOrientation.Horizontal,
-                          onTap: (finish) {
-                            setState(() {
-                              points=0;
-                              reStart();
-                            });
-                          },
-                          child: Text(
-                            'Tekrar Oynamak İçin Bana Tıkla',
-                            style: TextStyle(color: Utils.mainThemeColor, fontSize: 18),
+                    ) : Container(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          SizedBox(height: 300,),
+                          Celebration(),
+                          SizedBox(height: 50,),
+        
+        
+                          NiceButtons(
+                            height: 80,
+                            width: 300,
+                            borderColor: Utils.mainThemeColor,
+                            startColor: Utils.mainThemeColor,
+                            endColor: Utils.secondaryColor,
+                            stretch: false,
+                            gradientOrientation: GradientOrientation.Horizontal,
+                            onTap: (finish) {
+                              setState(() {
+                                points=0;
+                                reStart();
+                              });
+                            },
+                            child: Text(
+                              'Tekrar Oynamak İçin Bana Tıkla',
+                              style: TextStyle(color: Colors.white, fontSize: 18),
+                            ),
                           ),
-                        ),
-
-
-
-
-
-
-
-                      ],
-                    ),
-
+                        ],
+                      ),
                     ),
                     SizedBox(
                       height: 4,
                     ),
-
-
-
-
-
-
-
-
-
-                      
-                      
-                      
-
-                        
-
-
-
-
-
-                        ],
-
-                      ),
-            ),
-
-                  )
-
-
-            );
-
-
-
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                  ]
+              )
+        
+          ),
+        )
+    );
   }
+
 }
+
+
+
+
+
+
+
+
+
 
 class Tile extends StatefulWidget {
   String imagePathUrl;
   int tileIndex;
-  _Home3State parent;
+  _HomeState parent;
 
   Tile({required this.imagePathUrl, required this.tileIndex, required this.parent});
 
@@ -245,7 +233,7 @@ class _TileState extends State<Tile> {
             /// testing if the selected tiles are same
             if (selectedTile == myPairs[widget.tileIndex].getImageAssetPath()) {
               print("add point");
-              points = points +160 ;
+              points = points + 80;
               print(selectedTile + " thishis" + widget.imagePathUrl);
 
               TileModel tileModel = new TileModel(imageAssetPath: '', isSelected:false,);
