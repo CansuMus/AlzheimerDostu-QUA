@@ -158,9 +158,7 @@ Screenshot 6
 **Sprint Retrospective:**
 
 -Uygulamaya daha bütüncül yaklaşılacak.
-
 - Firebase odaklı çalışılacak.
-- 
 -Daha sıkı çalışılacak.
 
 # Product Backlog URL
