@@ -130,19 +130,23 @@ Screenshot 1
 
 
 Screenshot 2 
+
 ![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/48a5d6e8-2eec-46b0-86ba-9b985eec818c)
 
 
 Screenshot 3
+
 ![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/ce924a34-4068-4bfa-9cc7-03558a9875d7)
 
 
 
 Screenshot 4
+
 ![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/99b9e820-aa29-47ea-868e-ad82bbd6020e)
 
 
 Screenshot 5
+
 ![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/23dcad33-d562-4168-a397-8cbca3be0235)
 
 
@@ -157,9 +161,11 @@ Screenshot 6
 
 **Sprint Retrospective:**
 
--Uygulamaya daha bütüncül yaklaşılacak.
+- Uygulamaya daha bütüncül yaklaşılacak.
+
 - Firebase odaklı çalışılacak.
--Daha sıkı çalışılacak.
+  
+- Daha sıkı çalışılacak.
 
 # Product Backlog URL
 https://trello.com/invite/b/hzijqqD6/ATTI28f7b449359a005a03bbff12258b67ecE41CEC54/spri̇nt-2
