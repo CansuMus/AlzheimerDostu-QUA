@@ -107,5 +107,69 @@ Screenshot 6
 
 
 
+# Sprint 2
+
+**Sprint Notları:** Sprint hakkındaki detaylı bilgi ana görevlerin (mavi) içinde ayrıntılı yazmaktadır.
+
+**Sprint içinde tamamlanması tahmin edilen puan:** 100 Puan
+
+**Puan tamamlama mantığı:** Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ikinci sprint'in 100 puan olması gerektiğine karar verildi.
+
+**Daily Scrum:** Daily scrum toplantılarının zamansal sebeplerden ötürü Whatsapp ve Meet üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: https://1drv.ms/w/s!AlasK6j8McVDgWdJOmJlYmMHb5Ga?e=I44QRC
+
+**Sprint board update: Sprint board screenshotları:**
+![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/a4df5338-8b41-43ba-b2a6-bc24b87b33c5)
+
+
+**Ürün Durumu: Ekran görüntüleri:** 
+
+
+Screenshot 1
+
+![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/78198995-af20-443e-9a3a-67e084be0bcc)
+
+
+Screenshot 2 
+![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/48a5d6e8-2eec-46b0-86ba-9b985eec818c)
+
+
+Screenshot 3
+![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/ce924a34-4068-4bfa-9cc7-03558a9875d7)
+
+
+
+Screenshot 4
+![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/99b9e820-aa29-47ea-868e-ad82bbd6020e)
+
+
+Screenshot 5
+![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/23dcad33-d562-4168-a397-8cbca3be0235)
+
+
+Screenshot 6
+
+![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/ef085bcb-1ade-43d6-b475-47437d7787b4)
+
+
+**Sprint Review:** Hasta ekranının eksikleri neredeyse tamamlanıp hasta yakını ekranına giriş yapıldı. Eve git, uygulama içi oyun gibi zorlu bölümler tamamlandı. Kodlar github üzerinden birleştirildi. 
+
+**Sprint Review katılımcıları:** Tüm takım
+
+**Sprint Retrospective:**
+
+-Uygulamaya daha bütüncül yaklaşılacak.
+
+- Firebase odaklı çalışılacak.
+- 
+-Daha sıkı çalışılacak.
+
+# Product Backlog URL
+https://trello.com/invite/b/hzijqqD6/ATTI28f7b449359a005a03bbff12258b67ecE41CEC54/spri̇nt-2
+
+
+
+
+
+
 
 
