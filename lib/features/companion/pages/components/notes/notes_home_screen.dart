@@ -14,7 +14,7 @@ class Notes_Home_Screen extends StatefulWidget {
 
 class _Notes_Home_ScreenState extends State<Notes_Home_Screen> {
   List<Note> notes = List.empty(growable: true);
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(

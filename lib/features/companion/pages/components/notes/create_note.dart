@@ -3,6 +3,8 @@ import 'package:ff_55/features/companion/pages/components/notes/models/note_mode
 import 'package:ff_55/styles/colors/colors.dart';
 import 'package:flutter/material.dart';
 
+
+
 class CreateNote extends StatefulWidget {
   final Function(Note) onNewNoteCreated;
   const CreateNote({super.key, required this.onNewNoteCreated});
@@ -49,7 +51,7 @@ class _CreateNoteState extends State<CreateNote> {
         height: 80,
         width: 220,
         child: FloatingActionButton.extended(
-            onPressed: () {
+            onPressed: ()  {
               if (titleController.text.isEmpty) {
                 return;
               }
@@ -73,4 +75,5 @@ class _CreateNoteState extends State<CreateNote> {
       ),
     );
   }
+
 }

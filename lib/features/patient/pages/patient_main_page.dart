@@ -36,10 +36,7 @@ int currentPageIndex = 0;
             icon: Icon(Icons.games_outlined, color: Colors.white,size: 30,),
             label: 'Game',
           ),
-          NavigationDestination(
-            icon: Icon(Icons.note, color: Colors.white, size: 30,),
-            label: 'Info',
-          ),
+          
         ],
       ),
       body: <Widget>[
@@ -51,12 +48,6 @@ int currentPageIndex = 0;
 
         PatientHomePage(),
         OyunAnaEkrani(),
-
-        Container(
-          //color: Colors.blue,
-          alignment: Alignment.center,
-          child: const Text('Page 3'),
-        ),
       ][currentPageIndex],
     );
   }

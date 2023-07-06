@@ -1,4 +1,5 @@
 import 'package:ff_55/features/companion/pages/companion_home_page.dart';
+import 'package:ff_55/features/companion/pages/components/general_info_alz/general_info_alz.dart';
 import 'package:ff_55/styles/colors/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -45,11 +46,7 @@ class _CompanionMainPageState extends State<CompanionMainPage> {
         // ),
 
         CompanionHomePage(),
-        Container(
-          //color: Colors.blue,
-          alignment: Alignment.center,
-          child: const Text('Page 3'),
-        ),
+        GeneralInfoAlz(),
       ][currentPageIndex],
     );
   }
