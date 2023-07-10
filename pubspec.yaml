@@ -43,6 +43,8 @@ dependencies:
   google_sign_in: ^6.1.4
   gap: ^2.0.0
   timer_controller: ^0.1.0
+  
+  sqflite: ^2.0.0
 
   platform: ^3.1.0
   flutter_animated_button:

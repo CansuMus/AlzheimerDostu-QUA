@@ -1,20 +1,33 @@
-
 import 'package:ff_55/features/companion/pages/components/notes/create_note.dart';
+import 'package:ff_55/features/companion/pages/components/notes/database_helper.dart';
 import 'package:ff_55/features/companion/pages/components/notes/models/note_model.dart';
 import 'package:ff_55/features/companion/pages/components/notes/note_view.dart';
 import 'package:ff_55/styles/colors/colors.dart';
 import 'package:flutter/material.dart';
 
-class Notes_Home_Screen extends StatefulWidget {
-  const Notes_Home_Screen({super.key});
+class NotesHomeScreen extends StatefulWidget {
+  const NotesHomeScreen({super.key});
 
   @override
-  State<Notes_Home_Screen> createState() => _Notes_Home_ScreenState();
+  State<NotesHomeScreen> createState() => _NotesHomeScreenState();
 }
 
-class _Notes_Home_ScreenState extends State<Notes_Home_Screen> {
-  List<Note> notes = List.empty(growable: true);
-  
+class _NotesHomeScreenState extends State<NotesHomeScreen> {
+  final dbHelper = DatabaseHelper();
+  List<Note> notes = [];
+
+  void initState() {
+    super.initState();
+    _loadNotes();
+  }
+
+  void _loadNotes() async {
+    List<Note> loadedNotes = await dbHelper.getNotes();
+    setState(() {
+      notes = loadedNotes;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,7 +47,11 @@ class _Notes_Home_ScreenState extends State<Notes_Home_Screen> {
             return InkWell(
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return NoteView(note: notes[index], index: index, onNoteDeleted:onDeleteNote,);
+                  return NoteView(
+                    note: notes[index],
+                    index: index,
+                    onNoteDeleted: onDeleteNote,
+                  );
                 }));
               },
               child: Padding(
@@ -90,13 +107,13 @@ class _Notes_Home_ScreenState extends State<Notes_Home_Screen> {
     );
   }
 
-  void onNewNote(Note note) {
-    notes.add(note);
-    setState(() {});
+  Future<void> onNewNote(Note note) async {
+    await dbHelper.insertNote(note);
+    _loadNotes();
   }
 
-  void onDeleteNote(int index) {
-    notes.removeAt(index);
-    setState(() {});
+  Future<void> onDeleteNote(int index) async {
+     await dbHelper.deleteNote(notes[index].id!);
+    _loadNotes();
   }
 }

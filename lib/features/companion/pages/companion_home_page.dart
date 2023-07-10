@@ -60,7 +60,7 @@ class CompanionHomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return Notes_Home_Screen();
+                      return NotesHomeScreen();
                     }));
                   },
                 ),
