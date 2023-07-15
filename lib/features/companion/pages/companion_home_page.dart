@@ -93,7 +93,7 @@ class CompanionHomePage extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(builder: (context) {
-                              return Notes_Home_Screen();
+                              return NotesHomeScreen();
                             }),
                           );
                         },

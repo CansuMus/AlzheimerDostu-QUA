@@ -9,9 +9,9 @@ class NoteView extends StatelessWidget {
   final Function onNoteDeleted;
   const NoteView(
       {super.key,
-        required this.note,
-        required this.index,
-        required this.onNoteDeleted});
+      required this.note,
+      required this.index,
+      required this.onNoteDeleted});
 
   @override
   Widget build(BuildContext context) {

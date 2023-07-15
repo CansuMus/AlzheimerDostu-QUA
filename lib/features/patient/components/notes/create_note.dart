@@ -1,6 +1,9 @@
+
 import 'package:ff_55/features/patient/components/notes/models/note_model.dart';
 import 'package:ff_55/styles/colors/colors.dart';
 import 'package:flutter/material.dart';
+
+
 
 class CreateNote extends StatefulWidget {
   final Function(Note) onNewNoteCreated;
@@ -13,6 +16,14 @@ class CreateNote extends StatefulWidget {
 class _CreateNoteState extends State<CreateNote> {
   final titleController = TextEditingController();
   final bodyController = TextEditingController();
+
+  @override
+  void dispose() {
+    titleController.dispose();
+    bodyController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,7 +50,7 @@ class _CreateNoteState extends State<CreateNote> {
               controller: bodyController,
               style: const TextStyle(fontSize: 30),
               decoration:
-              const InputDecoration(border: InputBorder.none, hintText: "Notum"),
+                  const InputDecoration(border: InputBorder.none, hintText: "Notum"),
             )
           ],
         ),
@@ -48,7 +59,7 @@ class _CreateNoteState extends State<CreateNote> {
         height: 80,
         width: 220,
         child: FloatingActionButton.extended(
-            onPressed: () {
+            onPressed: ()  {
               if (titleController.text.isEmpty) {
                 return;
               }
@@ -56,7 +67,7 @@ class _CreateNoteState extends State<CreateNote> {
                 return;
               }
               final note =
-              Note(title: titleController.text, body: bodyController.text);
+                  Note(title:titleController.text, body: bodyController.text, id:null, );
               widget.onNewNoteCreated(note);
               Navigator.of(context).pop();
             },
@@ -72,4 +83,5 @@ class _CreateNoteState extends State<CreateNote> {
       ),
     );
   }
+
 }

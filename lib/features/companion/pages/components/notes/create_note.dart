@@ -16,6 +16,14 @@ class CreateNote extends StatefulWidget {
 class _CreateNoteState extends State<CreateNote> {
   final titleController = TextEditingController();
   final bodyController = TextEditingController();
+
+  @override
+  void dispose() {
+    titleController.dispose();
+    bodyController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +50,7 @@ class _CreateNoteState extends State<CreateNote> {
               controller: bodyController,
               style: const TextStyle(fontSize: 30),
               decoration:
-              const InputDecoration(border: InputBorder.none, hintText: "Notum"),
+                  const InputDecoration(border: InputBorder.none, hintText: "Notum"),
             )
           ],
         ),
@@ -59,7 +67,7 @@ class _CreateNoteState extends State<CreateNote> {
                 return;
               }
               final note =
-              Note(title: titleController.text, body: bodyController.text);
+                  Note(title:titleController.text, body: bodyController.text, id:null, );
               widget.onNewNoteCreated(note);
               Navigator.of(context).pop();
             },

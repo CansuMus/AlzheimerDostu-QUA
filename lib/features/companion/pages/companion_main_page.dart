@@ -1,4 +1,5 @@
 import 'package:ff_55/features/companion/pages/companion_home_page.dart';
+import 'package:ff_55/features/companion/pages/components/general_info_alz/general_info_alz.dart';
 import 'package:ff_55/styles/colors/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +36,10 @@ class _CompanionMainPageState extends State<CompanionMainPage> {
             icon: Icon(Icons.home, color: Colors.white, size: 30,),
             label: 'Home',
           ),
-
+          NavigationDestination(
+            icon: Icon(Icons.note, color: Colors.white, size: 30,),
+            label: 'Info',
+          ),
           NavigationDestination(
             icon: Icon(Icons.logout, color: Colors.white, size: 30,),
             label: 'Out',
@@ -50,6 +54,7 @@ class _CompanionMainPageState extends State<CompanionMainPage> {
         // ),
 
         CompanionHomePage(),
+        GeneralInfoAlz(),
 
         Container(
           child: Center(
