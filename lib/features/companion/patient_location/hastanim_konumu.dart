@@ -1,6 +1,4 @@
 import 'dart:async';
-
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:ff_55/services/firebase_functions.dart';
 import 'package:ff_55/styles/colors/colors.dart';
