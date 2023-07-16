@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "577487788542",
+    "project_id": "alzheimerdostu",
+    "storage_bucket": "alzheimerdostu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577487788542:android:988918133ffe8028e588af",
+        "android_client_info": {
+          "package_name": "com.example.ff_55"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577487788542-umbffmvbabq5pcidec4h91b65r7mr787.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJXbBvzJFxKvfj-0zhzQB96KENTrHxPvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577487788542-umbffmvbabq5pcidec4h91b65r7mr787.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
