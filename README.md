@@ -218,8 +218,7 @@ Screenshot 3
 
 
 # Product Backlog URL
-![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/7fac3b77-ac1d-46da-a9b9-45338c37c504)
-
+https://trello.com/invite/b/uv5x3BRh/ATTIca83751a1ee440118b106a81177a184f5C5B7AE1/spri̇nt-3 
 
 
 
