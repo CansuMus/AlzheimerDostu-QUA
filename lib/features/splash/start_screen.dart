@@ -1,3 +1,4 @@
+import 'package:ff_55/features/splash/onboarding_screen.dart';
 import 'package:ff_55/features/splash/selection_screen.dart';
 import 'package:ff_55/routes/app_routes.dart';
 import 'package:ff_55/styles/colors/colors.dart';
@@ -50,7 +51,7 @@ class _StartScreenState extends State<StartScreen> {
               onPressed: () {
                  Future.delayed(const Duration(), () {
                   GoRouter.of(Keys.mainNav.currentContext!)
-                 .go(SelectionScreen.route);});
+                 .go(OnBoardingScreen.route);});
               },
             ),
           )

@@ -3,6 +3,7 @@ import 'package:ff_55/features/Login/LoginForCompanion/login_page.dart';
 import 'package:ff_55/features/companion/pages/companion_main_page.dart';
 import 'package:ff_55/features/patient/go_home/go_home_page.dart';
 import 'package:ff_55/features/patient/pages/patient_main_page.dart';
+import 'package:ff_55/features/splash/onboarding_screen.dart';
 import 'package:ff_55/features/splash/selection_screen.dart';
 import 'package:ff_55/features/splash/start_screen.dart';
 import 'package:flutter/material.dart';
@@ -34,6 +35,10 @@ class AppRoutes {
         GoRoute(
           path: StartScreen.route, //SplashPage.route,
           builder: (context, state) => const StartScreen(),
+        ),
+        GoRoute(
+          path: OnBoardingScreen.route, //SplashPage.route,
+          builder: (context, state) => const OnBoardingScreen(),
         ),
         GoRoute(
           path: SelectionScreen.route, //SplashPage.route,
