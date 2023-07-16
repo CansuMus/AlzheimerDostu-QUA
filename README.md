@@ -171,6 +171,56 @@ Screenshot 6
 https://trello.com/invite/b/hzijqqD6/ATTI28f7b449359a005a03bbff12258b67ecE41CEC54/spri̇nt-2
 
 
+# Sprint 3
+
+**Sprint Notları:** Sprint hakkındaki detaylı bilgi ana görevlerin (mavi) içinde ayrıntılı yazmaktadır.
+
+**Sprint içinde tamamlanması tahmin edilen puan:** 100 Puan
+
+**Puan tamamlama mantığı:** Toplamda proje boyunca tamamlanması gereken 300 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde üçüncü sprint'in 100 puan olması gerektiğine karar verildi.
+
+**Daily Scrum:** Daily scrum toplantılarının zamansal sebeplerden ötürü Whatsapp ve Meet üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [https://1drv.ms/w/s!AlasK6j8McVDgWdJOmJlYmMHb5Ga?e=I44QRC
+](https://1drv.ms/w/s!AlasK6j8McVDgXuSJObsIHi8jr_Z?e=sxm6Ld)
+**Sprint board update: Sprint board screenshotları:**
+![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/d30d765f-3c44-4d9f-8892-b6f6e320332c)
+
+
+**Ürün Durumu: Ekran görüntüleri:** 
+
+
+
+Screenshot 1 
+![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/6f3a89b6-5550-44c2-b61f-8baff391a222)
+
+
+
+Screenshot 2
+
+![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/b2b14636-96d5-4cea-8901-36053876a1cb)
+
+
+
+Screenshot 3
+
+![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/8f4f2946-e761-454f-8ca9-ef978b392d0a)
+
+
+
+**Sprint Review:** Uygulama teslim edilecek hale gelmiştir. 
+
+**Sprint Review katılımcıları:** Tüm takım 
+
+**Sprint Retrospective:**
+- Uygulama bazı güncellemeler gerektirmekte.
+- Uygulamaya test kodları eklenmeli.
+- App store ve Play store'da yayınlanmaya tamamen hazır olmalı.
+- Uygulama için KVKK hazırlanmalı.
+
+
+# Product Backlog URL
+![image](https://github.com/CansuMus/AlzheimerDostu-QUA/assets/130174710/7fac3b77-ac1d-46da-a9b9-45338c37c504)
+
+
 
 
 
